@@ -46,11 +46,11 @@ public class aes {
 		String key = "J@NcRfUjWnZr4u7x!A%D*G-KaPdSgVkY";
 		//File inputFile = new File("text.txt");
 		
-		File inputFile = new File("src/AES-256-Implementation-In-Java-master/aes/Representation.pdf");
+		File inputFile = new File("src/wv_encryption/Entgeltabrechnung_201805.pdf");
 		
 		//File encryptedFile = new File("text.encrypted");
-		File encryptedFile = new File("encrypted.pdf");
-		File decryptedFile = new File("decrypted-text.pdf");
+		File encryptedFile = new File("src/wv_encryption/Entgeltabrechnung_201805_encrypted.pdf");
+		File decryptedFile = new File("src/wv_encryption/Entgeltabrechnung_201805_decrypted.pdf");
 			
 		try {
 			 aes.fileProcessor(Cipher.ENCRYPT_MODE,key,inputFile,encryptedFile);
